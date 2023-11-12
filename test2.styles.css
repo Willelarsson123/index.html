@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, nav, main, aside {
+    margin: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    text-align: right;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main, aside {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.offer-section, .about-section {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-list li {
+    text-align: center;
+}
+
+.contact-name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.contact-title {
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Adjust the size for the specific image */
+.header-container img.skrot-image {
+    width: 450px;
+    height: 300px;
+}
+.header-container img {
+    margin-right: 10px; /* Justera avståndet mellan logotyp och text */
+}
