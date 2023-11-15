@@ -135,13 +135,13 @@ th {
 
 .contact-person {
     text-align: center;
-    margin: 50px; /* Lägg till mellanrum här */
+    margin: 50px;
 }
 
 .contact-image {
     max-width: 100%;
     height: auto;
-    border-radius: 50%; /* Runda hörn på bilderna */
+    border-radius: 50%;
 }
 
 .contact-details {
@@ -151,3 +151,68 @@ th {
 .contact-title {
     font-weight: bold;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.map-container {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto; 
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+main.media-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-left: 440px;
+}
+.videos {
+   margin-left: 430px;
+}
+h3 {
+ margin-left: 550px;
+}
+
+/* Lägg till dessa regler i din CSS-fil */
+
+.search-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: lightgray;
+}
+
+.search-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

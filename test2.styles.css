@@ -1,11 +1,13 @@
+/* styles.css */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
-header, nav, main, aside {
+header, main, aside, footer {
     margin: 20px;
 }
 
@@ -13,9 +15,9 @@ header, nav, main, aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: grey;
     padding: 15px;
-    color: white;
+    color: yellow;
     border-radius: 5px;
 }
 
@@ -33,7 +35,7 @@ nav {
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -45,7 +47,7 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: hwb(0 98% 2%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -62,7 +64,7 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #F5F5DC;
 }
 
 .dropdown:hover .dropdown-content {
@@ -70,51 +72,55 @@ nav {
 }
 
 main, aside {
-    background-color: #fff;
+    background-color: #F5F5F5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    margin-top: 10px;
 }
 
-.offer-section, .about-section {
+.product-table-section, .contact-section {
     max-width: 600px;
     margin: 0 auto;
-    color: #333;
+    color: black;
 }
 
-img {
+table {
     width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.contact-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style: none;
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
-.contact-list li {
+th {
+    background-color: black;
+    color: white;
+}
+
+.contact-section {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-.contact-name {
-    font-weight: bold;
-    margin: 5px 0;
+.map-container {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
 }
 
-.contact-title {
-    color: #555;
-    margin: 5px 0;
-}
-
-/* Adjust the size for the specific image */
-.header-container img.skrot-image {
-    width: 450px;
-    height: 300px;
-}
-.header-container img {
-    margin-right: 10px; /* Justera avståndet mellan logotyp och text */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
