@@ -8,10 +8,8 @@ body {
 }
 
 header, nav, main, aside {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 50px;
+    
 }
 
 .header-container {
