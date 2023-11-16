@@ -29,3 +29,27 @@
             }
         });
     </script>
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Hämta referenser till sökrutan och tabellen
+    var searchInput = document.querySelector('.search-container input');
+    var rows = document.querySelectorAll('table tr');
+
+    // Lyssna på ändringar i sökrutan
+    searchInput.addEventListener('input', function () {
+        var searchTerm = searchInput.value.toLowerCase();
+
+        // Loopa igenom varje rad och göm eller visa beroende på söktermen
+        rows.forEach(function (row) {
+            var textContent = row.textContent.toLowerCase();
+            if (textContent.includes(searchTerm)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+});
+
+    

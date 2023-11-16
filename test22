@@ -1,142 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skrot och korn AB</title>
-    <link rel="stylesheet" type="text/css" href="test22.styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <h1>Skrot & Korn AB</h1>
-            <img src="skrot.jpeg" alt="Skrot och Korn" width="450" height="300">
-        </div>
-        <nav class="dropdown">
-            <button class="dropbtn">☰ Meny</button>
-            <div class="dropdown-content">
-                <a href="index.html">Startsida</a>
-                <a href="produktsida.html">Produkter</a>
-                <a href="kontakt.html">Kontakta oss</a>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="offer-section">
-            <h2>Vi erbjuder...</h2>
-            <p>Skrot och Korn AB erbjuder högkvalitativa bygg- och anläggningsmaskiner, inklusive grävskopor, lyftkranar och lastbilar. Vi levererar pålitlig utrustning för dina projektbehov till konkurrenskraftiga priser. Kontakta oss för expertrådgivning och pålitlig kundservice.</p>
-        </section>
-    </main>
-    
-    <aside>
-        <section class="about-section">
-            <h2>Om oss...</h2>
-            <p>Skrot och Korn AB är en pålitlig och etablerad aktör inom bygg- och anläggningsbranschen. Med många års erfarenhet och en passion för kvalitet har vi byggt upp ett starkt rykte för att leverera pålitliga maskiner och utrustning. Vårt dedikerade team av branschexperter arbetar tillsammans med våra kunder för att hitta de bästa lösningarna för deras projekt. Vi är stolta över vårt engagemang för att stödja våra kunders framgång och säkerställa en smidig verksamhet.</p>
-        </section>
-    </aside>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="skrot.jpeg" alt="Skrot och Korn" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="solnedgång.slide.webp" alt="Skrot och Korn" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <img src="gravmaskin.slide.jpeg" alt="Skrot och Korn" style="width:100%">
+    </div>
+    <!-- Lägg till fler bilder om det behövs -->
 
-
-
-
-Produkter
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skrot och korn AB</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1 style="font-size:10vw">Skrot & Korn AB</h1>
-        <img src="skrot.jpeg" width="450" height="300">
-    </header>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="produktsida.index.html">Produkter</a></li>
-                <li><a href="kontakt.index.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Vi erbjuder...</h2>
-        <p>Skrot och Korn AB erbjuder högkvalitativa bygg- och anläggningsmaskiner,<br> inklusive grävskopor, lyftkranar och lastbilar. Vi levererar pålitlig utrustning<br> för dina projektbehov till konkurrenskraftiga priser. Kontakta oss för<br> expertrådgivning och pålitlig kundservice.</p>
-    </main>
-    <aside>
-        <h2>Om oss...</h2>
-        <p>Skrot och Korn AB är en pålitlig och etablerad aktör inom bygg- och<br> anläggningsbranschen. Med många års erfarenhet och en passion för kvalitet<br> har vi byggt upp ett starkt rykte för att leverera pålitliga maskiner och<br> utrustning. Vårt dedikerade team av branschexperter arbetar tillsammans<br> med våra kunder för att hitta de bästa lösningarna för deras projekt. Vi är<br> stolta över vårt engagemang för att stödja våra kunders framgång och<br> säkerställa en smidig verksamhet.</p>
-    </aside>
-    <script src="script.js"></script>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produktsida - Skrot och Korn AB</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Produkter</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="produktsida.index.html">Produkter</a></li>
-                <li><a href="kontakt.index.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <table border="1">
-        <tr>
-            <th>Produkt</th>
-            <th>Bild</th>
-            <th>Namn</th>
-            <th>Pris (inkl. moms)</th>
-            <th>Pris (exkl. moms)</th>
-            <th>Hästkrafter</th>
-            <th>Lastvikt</th>
-        </tr>
-        <tr>
-            <td>Grävskopa</td>
-            <td><img src="grävskopa.jpeg" width="220" height="150" alt="Bild på grävskopa"></td>
-            <td>Grävskopa Modell X</td>
-            <td>$1000</td>
-            <td>$800</td>
-            <td>600 hp</td>
-            <td>5000 kg</td>
-        </tr>
-        <tr>
-            <td>Lyftkran</td>
-            <td><img src="lyftkran.jpeg" width="220" height="150" alt="Bild på lyftkran"></td>
-            <td>Lyftkran Plus</td>
-            <td>$2000</td>
-            <td>$1600</td>
-            <td>650 hp</td>
-            <td>8000 kg</td>
-        </tr>
-        <tr>
-            <td>Lastbil</td>
-            <td><img src="lastbil.jpeg" width="220" height="150" alt="Bild på lastbil"></td>
-            <td>Lastbil Supreme</td>
-            <td>$3000</td>
-            <td>$2400</td>
-            <td>700 hp</td>
-            <td>12000 kg</td>
-        </tr>
-    </table>
-</body>
-</html>
-
+    <!-- Navigationsknappar -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>

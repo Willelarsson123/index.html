@@ -9,9 +9,24 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="logotyp.png" alt="logotyp" width="200" height="200">
+            <img src="logotyp.png" alt="logotyp" width="20" height="20">
             <h1>Skrot & Korn AB</h1>
-            <img src="skrot.jpeg" alt="Skrot och Korn" width="450" height="300">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="skrot.jpeg" alt="Skrot och Korn" style="width:10%">
+                </div>
+                <div class="mySlides">
+                    <img src="solnedgång.slide.webp" alt="Skrot och Korn" style="width:10%">
+                </div>
+                <div class="mySlides">
+                    <img src="gravmaskin.slide.jpeg" alt="Skrot och Korn" style="width:10%">
+                </div>
+                <!-- Lägg till fler bilder om det behövs -->
+            
+                <!-- Navigationsknappar -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </div>
         <nav class="dropdown">
             <button class="dropbtn">☰ Meny</button>
