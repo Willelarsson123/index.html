@@ -10,10 +10,40 @@
 
   gtag('config', 'G-LJ8727EKKM');
 </script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LJ8727EKKM');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produktsida - Skrot och Korn AB</title>
     <link rel="stylesheet" href="test22.styles.css">
+    <style>
+        #totalAmount {
+          font-weight: bold;
+        }
+      </style>
+  <script>
+    function calculateTotal() {
+      var checkboxes = document.getElementsByClassName("product-checkbox");
+      var totalAmount = 0;
+
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          var priceExclVAT = parseFloat(checkboxes[i].parentNode.parentNode.children[5].textContent.slice(1));
+          totalAmount += priceExclVAT;
+        }
+      }
+
+      document.getElementById("totalAmount").textContent = "Totalt belopp exkl. moms: " +  + Math.round(totalAmount) + " SEK";
+    }
+  </script>
 </head>
 <body>
     <header>
@@ -37,7 +67,7 @@
             <button class="search-btn">Sök</button>
         </div>
     </header>
-
+    <div id="totalAmount">Totalt belopp exkl. moms: 0 SEK</div>
     <table border="1">
         <tr>
             <th>Välj</th>
@@ -50,32 +80,32 @@
             <th>Lastvikt</th>
         </tr>
         <tr>
-            <td><input type="checkbox" class="product-checkbox"></td>
+            <td><input type="checkbox" class="product-checkbox" onchange="calculateTotal()"></td>
             <td>Grävskopa</td>
             <td><img src="gravskopa.jpeg" width="220" height="150" alt="Bild på grävskopa"></td>
             <td>Grävskopa Modell X</td>
-            <td>$1000</td>
-            <td>$800</td>
+            <td> 1000 SEK</td>
+            <td>  800 SEK</td>
             <td>600 hp</td>
             <td>5000 kg</td>
         </tr>
         <tr>
-            <td><input type="checkbox" class="product-checkbox"></td>
+            <td><input type="checkbox" class="product-checkbox" onchange="calculateTotal()"></td>
             <td>Lyftkran</td>
             <td><img src="lyftkran.jpeg" width="220" height="150" alt="Bild på lyftkran"></td>
             <td>Lyftkran Plus</td>
-            <td>$2000</td>
-            <td>$1600</td>
+            <td> 2000 SEK</td>
+            <td> 1600 SEK</td>
             <td>650 hp</td>
             <td>8000 kg</td>
         </tr>
         <tr>
-            <td><input type="checkbox" class="product-checkbox"></td>
+            <td><input type="checkbox" class="product-checkbox" onchange="calculateTotal()"></td>
             <td>Lastbil</td>
             <td><img src="lastbil.jpeg" width="220" height="150" alt="Bild på lastbil"></td>
             <td>Lastbil Supreme</td>
-            <td>$3000</td>
-            <td>$2400</td>
+            <td> 3000 SEK</td>
+            <td> 2400 SEK</td>
             <td>700 hp</td>
             <td>12000 kg</td>
         </tr>
